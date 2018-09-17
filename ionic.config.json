@@ -1,0 +1,7 @@
+{
+  "name": "ionicsecond",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,87 @@
+<!--
+  Generated template for the MakeappointmentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Make Appointment</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    Date/Time
+
+    <ion-list>
+        <ion-item>
+          <ion-label>Pick a Date</ion-label>
+          <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+        </ion-item>
+    
+    
+        <ion-item>
+          <ion-label>Start Time</ion-label>
+          <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+        </ion-item>
+        
+        <ion-item>
+            <ion-label>End Time</ion-label>
+            <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeEnds"></ion-datetime>
+          </ion-item>
+     
+    </ion-list>
+    Pick Service Center
+    <ion-list>
+        <ion-item>
+          <ion-label>Service Center</ion-label>
+          <ion-select [(ngModel)]="gaming">
+            <ion-option value="nes">Kio service</ion-option>
+            <ion-option value="n64">Munaweera centers</ion-option>
+            <ion-option value="ps">Play State</ion-option>
+            <ion-option value="genesis">Sega Genesis</ion-option>
+            <ion-option value="saturn">Sega Saturn</ion-option>
+            <ion-option value="snes">SNES</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+    Pick Service
+     
+    <ion-list>
+        <ion-item>
+          <ion-label>Service Type</ion-label>
+          <ion-select [(ngModel)]="gaming">
+            <ion-option value="ns">Burning Oil</ion-option>
+            <ion-option value="n4">Tire Blows</ion-option>
+            <ion-option value="pis">Engine Overheat</ion-option>
+            <ion-option value="geness">Order Something</ion-option>
+            <ion-option value="satun">Unintended Acceleration</ion-option>
+            <ion-option value="sns">Other</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    
+    Estimated Cost
+      <ion-list>
+          <ion-item>
+            <ion-label>Cost</ion-label>
+            <ion-select [(ngModel)]="gaming">
+              <ion-option value="ns">1500</ion-option>
+              <ion-option value="n4">2500</ion-option>
+              <ion-option value="pis">3000</ion-option>
+              <ion-option value="geness">4500</ion-option>
+              <ion-option value="satun">5000</ion-option>
+              <ion-option value="sns">10000</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+
+        <button ion-button>Appointment submitted</button>
+        <button ion-button color="secondary" (click)="openPage()">Menu</button>
+        
+</ion-content>
